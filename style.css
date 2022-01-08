@@ -1,0 +1,57 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+ cursor: none;
+}
+
+body {
+ background-image: url("wall.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ text-align: center;
+}
+
+.container {
+ position: relative;
+ height: 100%;
+ overflow: hidden;
+}
+
+button {
+ color: rgb(255, 255, 255);
+ border: 3px solid rgb(226, 54, 11);
+ background: transparent;
+ padding: 15px 45px;
+ font-size: 1.1rem;
+ margin-top: 3em;
+ outline: none;
+ cursor: none;
+}
+
+.bloodSpot {
+ position: absolute;
+ height: 50px;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+}
+
+.Ghost {
+ height: 200px;
+}
+
+img::selection {
+ background: transparent;
+}
+
+.cursor {
+ position: absolute;
+ height: 70px;
+ transform: translate(-50%, -50%);
+ pointer-events: none;
+ z-index: 2;
+ transition: 0.3s transform ease;
+ transform-origin: 100% 100%;
+}
